@@ -80,7 +80,26 @@ enum DesignTokens {
     
     //MARK: - Fonts
     
-    //MARK: - Corner Radius
+    //MARK: - Border Radius
+    
+    enum BorderRadius {
+        
+        static var none: CGFloat = {
+            return 0
+        }()
+        
+        static var sm: CGFloat = {
+            return 8
+        }()
+        
+        static var pill: CGFloat = {
+            return 34.44
+        }()
+        
+        static var circular: CGFloat = {
+           return 100
+        }()
+    }
     
     //MARK: - Icons
     
