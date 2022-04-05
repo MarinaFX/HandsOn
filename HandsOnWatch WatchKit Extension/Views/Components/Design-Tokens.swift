@@ -12,7 +12,7 @@ import SwiftUI
 enum DesignTokens {
     
     //MARK: - Colors
-    enum Colors {
+    enum Colors: CaseIterable {
         
         enum Brand {
             
@@ -21,7 +21,7 @@ enum DesignTokens {
             }
         }
         
-        enum Support {
+        enum Support: CaseIterable {
             
             static var primaryColor: Color {
                 return Color(red: 0.98, green: 0.067, blue: 0.31)
@@ -40,7 +40,7 @@ enum DesignTokens {
             }
         }
         
-        enum Neutral {
+        enum Neutral: CaseIterable {
             
             static var lowPure: Color {
                 return Color(red: 0, green: 0, blue: 0)
@@ -82,7 +82,7 @@ enum DesignTokens {
     
     //MARK: - Border Radius
     
-    enum BorderRadius {
+    enum BorderRadius: CaseIterable {
         
         static var none: CGFloat = {
             return 0
@@ -102,6 +102,35 @@ enum DesignTokens {
     }
     
     //MARK: - Icons
+    
+    enum Icons: CaseIterable {
+        
+        static var minusFill: Image = {
+            Image(systemName: "minus.circle.fill")
+                .frame(width: 24, height: 24)
+        }() as! Image
+        
+        static var plusFill: Image = {
+            Image(systemName: "plus.circle.fill")
+                .frame(width: 24, height: 24)
+        }() as! Image
+        
+        static var xmarkFill: Image = {
+            Image(systemName: "xmark.circle.fill")
+                .frame(width: 32, height: 32)
+        }() as! Image
+        
+        static var pauseFill: Image = {
+            Image(systemName: "pause.circle.fill")
+                .frame(width: 32, height: 32)
+                
+        }() as! Image
+        
+        static var ellipsisFill: Image = {
+            Image(systemName: "ellipsi.circle.fill")
+                .frame(width: 18, height: 18)
+        }() as! Image
+    }
     
     //MARK: - Opacity
 }
