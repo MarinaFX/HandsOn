@@ -18,7 +18,7 @@ enum DesignTokens {
         enum Brand {
             
             static var primaryColor: Color {
-                return Color(red: 0.471, green: 0.478, blue: 1)
+                return Color(red: 1, green: 0.36, blue: 0)
             }
         }
         
