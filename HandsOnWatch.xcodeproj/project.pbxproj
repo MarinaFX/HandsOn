@@ -21,6 +21,7 @@
 		4854B28527FE0ED0005F9659 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28427FE0ED0005F9659 /* Ingredient.swift */; };
 		4854B28727FE0F59005F9659 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28627FE0F59005F9659 /* Instruction.swift */; };
 		4854B28927FE1065005F9659 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28827FE1065005F9659 /* Recipe.swift */; };
+		4854B28B27FE20CF005F9659 /* FinishedTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28A27FE20CF005F9659 /* FinishedTimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		4854B28427FE0ED0005F9659 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		4854B28627FE0F59005F9659 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
 		4854B28827FE1065005F9659 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		4854B28A27FE20CF005F9659 /* FinishedTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedTimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				1BBD6E5B27FCBF9200489427 /* Components */,
+				4854B28A27FE20CF005F9659 /* FinishedTimerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				1BBD6E3F27FB84D900489427 /* ContentView.swift in Sources */,
 				4854B28527FE0ED0005F9659 /* Ingredient.swift in Sources */,
 				1BBD6E4527FB84D900489427 /* ComplicationController.swift in Sources */,
+				4854B28B27FE20CF005F9659 /* FinishedTimerView.swift in Sources */,
 				1BBD6E5D27FCBFA300489427 /* Design-Tokens.swift in Sources */,
 				1BBD6E3D27FB84D900489427 /* HandsOnWatchApp.swift in Sources */,
 				4854B28927FE1065005F9659 /* Recipe.swift in Sources */,
