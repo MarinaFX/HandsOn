@@ -6,11 +6,21 @@
 //
 
 import SwiftUI
+import WatchKit
 
 struct ContentView: View {
+    
+    
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        NavigationView {
+            ScrollView {
+            }
+            .background(.gray)
+        }
+        .navigationTitle("Flemis")
+        .navigationBarTitleDisplayMode(.inline)
+
     }
 }
 
