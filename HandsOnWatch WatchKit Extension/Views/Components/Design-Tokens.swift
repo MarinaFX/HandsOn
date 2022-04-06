@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 import SwiftUI
 
 //MARK: - Hands On Design System
@@ -80,6 +81,28 @@ enum DesignTokens {
     
     //MARK: - Fonts
     
+    enum Fonts {
+        
+        static var measures: Font = {
+            return Font(Font.system(size: 40).weight(.semibold) as! CTFont)
+        }()
+        
+        /**
+            Used for description-text token
+         
+            primary-description-text uses **support** colors
+         
+            secondary-description-text uses **neutral** colors
+         */
+        static var description: Font = {
+            return Font(Font.system(size: 15).weight(.regular) as! CTFont).uppercaseSmallCaps()
+        }()
+        
+        static var totalTime: Font = {
+            return Font(Font.system(size: 14).weight(.regular) as! CTFont).uppercaseSmallCaps()
+        }()
+    }
+    
     //MARK: - Border Radius
     
     enum BorderRadius: CaseIterable {
@@ -107,28 +130,27 @@ enum DesignTokens {
         
         static var minusFill: Image = {
             Image(systemName: "minus.circle.fill")
-                .frame(width: 24, height: 24)
+                .font(Font.system(size: 24).weight(.light))
         }() as! Image
         
         static var plusFill: Image = {
             Image(systemName: "plus.circle.fill")
-                .frame(width: 24, height: 24)
+                .font(Font.system(size: 24).weight(.light))
         }() as! Image
         
         static var xmarkFill: Image = {
             Image(systemName: "xmark.circle.fill")
-                .frame(width: 32, height: 32)
+                .font(Font.system(size: 32).weight(.light))
         }() as! Image
         
         static var pauseFill: Image = {
             Image(systemName: "pause.circle.fill")
-                .frame(width: 32, height: 32)
-                
+                .font(Font.system(size: 32).weight(.light))
         }() as! Image
         
         static var ellipsisFill: Image = {
             Image(systemName: "ellipsi.circle.fill")
-                .frame(width: 18, height: 18)
+                .font(Font.system(size: 18).weight(.light))
         }() as! Image
     }
     
