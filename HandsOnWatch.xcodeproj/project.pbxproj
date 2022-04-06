@@ -18,6 +18,9 @@
 		1BBD6E4727FB84DA00489427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BBD6E4627FB84DA00489427 /* Assets.xcassets */; };
 		1BBD6E4A27FB84DA00489427 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BBD6E4927FB84DA00489427 /* Preview Assets.xcassets */; };
 		1BBD6E5D27FCBFA300489427 /* Design-Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBD6E5C27FCBFA300489427 /* Design-Tokens.swift */; };
+		4854B28527FE0ED0005F9659 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28427FE0ED0005F9659 /* Ingredient.swift */; };
+		4854B28727FE0F59005F9659 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28627FE0F59005F9659 /* Instruction.swift */; };
+		4854B28927FE1065005F9659 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28827FE1065005F9659 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		1BBD6E4B27FB84DA00489427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BBD6E4C27FB84DA00489427 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		1BBD6E5C27FCBFA300489427 /* Design-Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Design-Tokens.swift"; sourceTree = "<group>"; };
+		4854B28427FE0ED0005F9659 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		4854B28627FE0F59005F9659 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
+		4854B28827FE1065005F9659 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 		1BBD6E3B27FB84D900489427 /* HandsOnWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4854B28327FE0EAF005F9659 /* Model */,
 				1BBD6E5A27FCBF8B00489427 /* Views */,
 				1BBD6E3C27FB84D900489427 /* HandsOnWatchApp.swift */,
 				1BBD6E3E27FB84D900489427 /* ContentView.swift */,
@@ -156,6 +163,16 @@
 				1BBD6E5C27FCBFA300489427 /* Design-Tokens.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4854B28327FE0EAF005F9659 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4854B28427FE0ED0005F9659 /* Ingredient.swift */,
+				4854B28627FE0F59005F9659 /* Instruction.swift */,
+				4854B28827FE1065005F9659 /* Recipe.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +304,12 @@
 			files = (
 				1BBD6E4127FB84D900489427 /* NotificationController.swift in Sources */,
 				1BBD6E3F27FB84D900489427 /* ContentView.swift in Sources */,
+				4854B28527FE0ED0005F9659 /* Ingredient.swift in Sources */,
 				1BBD6E4527FB84D900489427 /* ComplicationController.swift in Sources */,
 				1BBD6E5D27FCBFA300489427 /* Design-Tokens.swift in Sources */,
 				1BBD6E3D27FB84D900489427 /* HandsOnWatchApp.swift in Sources */,
+				4854B28927FE1065005F9659 /* Recipe.swift in Sources */,
+				4854B28727FE0F59005F9659 /* Instruction.swift in Sources */,
 				1BBD6E4327FB84D900489427 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
