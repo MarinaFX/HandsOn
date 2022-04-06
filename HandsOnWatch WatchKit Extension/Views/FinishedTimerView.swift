@@ -12,6 +12,7 @@ struct FinishedTimerView: View {
         VStack {
             Image("IconOrange")
             Text("Acabou o tempo!")
+                .font(DesignTokens.Fonts.totalTime)
             Text("HANDS ON")
                 .foregroundColor(DesignTokens.Colors.Brand.primaryColor)
         }
