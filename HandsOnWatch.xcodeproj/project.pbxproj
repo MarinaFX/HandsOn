@@ -31,6 +31,7 @@
 		B4BDC69627FF6F060082103E /* StartTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BDC69527FF6F060082103E /* StartTimerView.swift */; };
 		DF61E9DB27FF53400007E01B /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61E9DA27FF53400007E01B /* StandardButton.swift */; };
 		DF61E9DD27FF53560007E01B /* IngredientActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61E9DC27FF53560007E01B /* IngredientActionView.swift */; };
+		F83332E127FF6DCF00811C31 /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83332E027FF6DCF00811C31 /* CountDownTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		B4BDC69527FF6F060082103E /* StartTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartTimerView.swift; sourceTree = "<group>"; };
 		DF61E9DA27FF53400007E01B /* StandardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
 		DF61E9DC27FF53560007E01B /* IngredientActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientActionView.swift; sourceTree = "<group>"; };
+		F83332E027FF6DCF00811C31 /* CountDownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				1BBD6E5B27FCBF9200489427 /* Components */,
 				4854B28A27FE20CF005F9659 /* FinishedTimerView.swift */,
 				4854B28C27FF5361005F9659 /* FinishedRecipeView.swift */,
+				F83332E027FF6DCF00811C31 /* CountDownTimer.swift */,
 				B4BDC69527FF6F060082103E /* StartTimerView.swift */,
 				B441B06227FF7A5300FBCF91 /* RecipeStartView.swift */,
 			);
@@ -353,6 +356,7 @@
 				1BFDDE3527FF5D2300B5FC0B /* RecipesListView.swift in Sources */,
 				4854B28527FE0ED0005F9659 /* Ingredient.swift in Sources */,
 				DF61E9DD27FF53560007E01B /* IngredientActionView.swift in Sources */,
+				F83332E127FF6DCF00811C31 /* CountDownTimer.swift in Sources */,
 				1BBD6E4527FB84D900489427 /* ComplicationController.swift in Sources */,
 				4854B28B27FE20CF005F9659 /* FinishedTimerView.swift in Sources */,
 				1BBD6E5D27FCBFA300489427 /* Design-Tokens.swift in Sources */,
