@@ -8,12 +8,14 @@
 import Foundation
 
 enum Category: CustomStringConvertible {
-    case risotto
+    case massas, bolo
     
     var description: String {
         switch self {
-            case .risotto:
-                return "Risotto"
+            case .bolo:
+                return "Bolos"
+            case .massas:
+                return "Massas"
         }
     }
 }
@@ -58,3 +60,61 @@ struct Recipe: Hashable {
         return self.produceQuantity
     }
 }
+
+public class Recipes {
+    let recipes: [Recipe] = buildRecipesArray()
+    
+    static func buildRecipesArray() -> [Recipe] {
+        var recipe: [Recipe] = []
+        
+        recipe.append(
+            Recipe(title: "Bolo de chocolate",
+                   produceQuantity: 2.0,
+                   produceUnitOfMeasurement: "pratos",
+                   ingredients: [Ingredient(name: "Ovos",quantityWithUnitOfMeasurement: "4 unidades"),
+                                 Ingredient(name: "Açucar",quantityWithUnitOfMeasurement: "240"),
+                                 Ingredient(name: "Chocolate em pó",quantityWithUnitOfMeasurement: "240g"),
+                                 Ingredient(name: "Óleo",quantityWithUnitOfMeasurement: "240ml"),
+                                 Ingredient(name: "Água",quantityWithUnitOfMeasurement: "240ml"),
+                                 Ingredient(name: "Farinha de trigo",quantityWithUnitOfMeasurement: "480g"),
+                                 Ingredient(name: "Fermento",quantityWithUnitOfMeasurement: "10g"),
+                                 Ingredient(name: "Manteiga",quantityWithUnitOfMeasurement: "10g")],
+                   instructions: [Instruction(ingredients: [Ingredient(name: "Forno", quantityWithUnitOfMeasurement: "180°")],instruction: "Pré-aqueça", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Açucar", quantityWithUnitOfMeasurement: "240g")], instruction: "Adicione", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Chocolate em pó", quantityWithUnitOfMeasurement: "240g")],instruction: "Adicione", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Ovos", quantityWithUnitOfMeasurement: "4 unidades")],instruction: "Adicione e misture", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Óleo", quantityWithUnitOfMeasurement: "4 240ml")],instruction: "Adicione e misture", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Água", quantityWithUnitOfMeasurement: "4 unidades")],instruction: "Adicione e misture", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Água", quantityWithUnitOfMeasurement: "4 240g"),
+                                                            Ingredient(name: "Farinha", quantityWithUnitOfMeasurement: "240g")
+                                                           ],instruction: "Adicione aos poucos e misture", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Manteiga", quantityWithUnitOfMeasurement: "10g")],instruction: "Unte a fora", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Massa", quantityWithUnitOfMeasurement: "")],instruction: "Coloque na forma", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Forno", quantityWithUnitOfMeasurement: "")],instruction: "Asse por", timer: 1800),],
+                   category: .bolo, time: "45 minutos"))
+        
+        recipe.append(
+            Recipe(title: "Massa ao Molho Pesto",
+                   produceQuantity: 2.0,
+                   produceUnitOfMeasurement: "porções",
+                   ingredients: [Ingredient(name: "Manjerição",quantityWithUnitOfMeasurement: "1/4 de xícara"),
+                                 Ingredient(name: "Nozes picadas",quantityWithUnitOfMeasurement: "2 colheres de sopa"),
+                                 Ingredient(name: "Alho",quantityWithUnitOfMeasurement: "2 dentes"),
+                                 Ingredient(name: "Parmesão ralado",quantityWithUnitOfMeasurement: "1 colher de sopa"),
+                                 Ingredient(name: " Provolone ralado",quantityWithUnitOfMeasurement: "1 colher de sopa"),
+                                 Ingredient(name: " Azeite ",quantityWithUnitOfMeasurement: "1/2 xícara"),
+                                 Ingredient(name: "Água ",quantityWithUnitOfMeasurement: "3 litros"),
+                                 Ingredient(name: "Espaguete ",quantityWithUnitOfMeasurement: "300g")],
+                   
+                   instructions: [Instruction(ingredients: [Ingredient(name: "Amasse", quantityWithUnitOfMeasurement: "500g")],
+                                              instruction: "Em um pilão, amasse bem as folhas de manjericão com as notes, os alhos e o sal. Vá amassando e acrescentando aos poucos os dois tipos de queijo.", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Óleo", quantityWithUnitOfMeasurement: "Passe a mistura para uma vasilha")], instruction: "e acrescente aos poucos o óleo", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Água", quantityWithUnitOfMeasurement: "Esquente até fervura e coloque o espaguete"),
+                                                            Ingredient(name: "Espaguete", quantityWithUnitOfMeasurement: "cozinhe ")], instruction: "de acordo com instruções na embalagem", timer: 0),
+                                  Instruction(ingredients: [Ingredient(name: "Misture", quantityWithUnitOfMeasurement: "espaguete e o molho")], instruction: "e sirva", timer: 300)],
+                   category: .massas, time: "45 minutos"))
+        
+        return recipe
+    }
+}
+
