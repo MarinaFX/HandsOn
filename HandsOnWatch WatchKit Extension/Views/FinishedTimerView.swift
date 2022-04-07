@@ -9,8 +9,10 @@ import SwiftUI
 
 struct FinishedTimerView: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 8) {
             Image("IconOrange")
+                .resizable()
+                .frame(width: 111.93, height: 111.93)
             Text("Acabou o tempo!")
                 .font(DesignTokens.Fonts.totalTime)
             Text("HANDS ON")

@@ -95,11 +95,11 @@ enum DesignTokens {
             secondary-description-text uses **neutral** colors
          */
         static var description: Font = {
-            return Font(CTFontCreateUIFontForLanguage(.system, 15, nil)!).weight(.regular).uppercaseSmallCaps()
+            return Font(CTFontCreateUIFontForLanguage(.system, 16, nil)!).weight(.light)
         }()
         
         static var totalTime: Font = {
-            return Font(CTFontCreateUIFontForLanguage(.system, 14, nil)!).weight(.regular).uppercaseSmallCaps()
+            return Font(CTFontCreateUIFontForLanguage(.system, 14, nil)!).weight(.regular)
         }()
     }
     
