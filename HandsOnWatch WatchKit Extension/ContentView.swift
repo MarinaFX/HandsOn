@@ -9,16 +9,10 @@ import SwiftUI
 import WatchKit
 
 struct ContentView: View {
-    
-    
-    
     var body: some View {
         NavigationView {
-            ScrollView {
-            }
-            .background(.gray)
+            RecipeCategoryListView()
         }
-        .navigationTitle("Flemis")
         .navigationBarTitleDisplayMode(.inline)
 
     }
