@@ -27,6 +27,8 @@
 		4854B28927FE1065005F9659 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28827FE1065005F9659 /* Recipe.swift */; };
 		4854B28B27FE20CF005F9659 /* FinishedTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28A27FE20CF005F9659 /* FinishedTimerView.swift */; };
 		4854B28D27FF5361005F9659 /* FinishedRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28C27FF5361005F9659 /* FinishedRecipeView.swift */; };
+		B441B06327FF7A5300FBCF91 /* RecipeStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441B06227FF7A5300FBCF91 /* RecipeStartView.swift */; };
+		B4BDC69627FF6F060082103E /* StartTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BDC69527FF6F060082103E /* StartTimerView.swift */; };
 		DF61E9DB27FF53400007E01B /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61E9DA27FF53400007E01B /* StandardButton.swift */; };
 		DF61E9DD27FF53560007E01B /* IngredientActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61E9DC27FF53560007E01B /* IngredientActionView.swift */; };
 		F83332E127FF6DCF00811C31 /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83332E027FF6DCF00811C31 /* CountDownTimer.swift */; };
@@ -98,6 +100,8 @@
 		4854B28827FE1065005F9659 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		4854B28A27FE20CF005F9659 /* FinishedTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedTimerView.swift; sourceTree = "<group>"; };
 		4854B28C27FF5361005F9659 /* FinishedRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedRecipeView.swift; sourceTree = "<group>"; };
+		B441B06227FF7A5300FBCF91 /* RecipeStartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeStartView.swift; sourceTree = "<group>"; };
+		B4BDC69527FF6F060082103E /* StartTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartTimerView.swift; sourceTree = "<group>"; };
 		DF61E9DA27FF53400007E01B /* StandardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
 		DF61E9DC27FF53560007E01B /* IngredientActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientActionView.swift; sourceTree = "<group>"; };
 		F83332E027FF6DCF00811C31 /* CountDownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 				4854B28A27FE20CF005F9659 /* FinishedTimerView.swift */,
 				4854B28C27FF5361005F9659 /* FinishedRecipeView.swift */,
 				F83332E027FF6DCF00811C31 /* CountDownTimer.swift */,
+				B4BDC69527FF6F060082103E /* StartTimerView.swift */,
+				B441B06227FF7A5300FBCF91 /* RecipeStartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -358,9 +364,11 @@
 				1BBD6E3D27FB84D900489427 /* HandsOnWatchApp.swift in Sources */,
 				4854B28927FE1065005F9659 /* Recipe.swift in Sources */,
 				1BFDDE3727FF5FF500B5FC0B /* +Extensions.swift in Sources */,
+				B441B06327FF7A5300FBCF91 /* RecipeStartView.swift in Sources */,
 				DF61E9DB27FF53400007E01B /* StandardButton.swift in Sources */,
 				4854B28727FE0F59005F9659 /* Instruction.swift in Sources */,
 				1BBD6E4327FB84D900489427 /* NotificationView.swift in Sources */,
+				B4BDC69627FF6F060082103E /* StartTimerView.swift in Sources */,
 				1BBD6E6627FE166300489427 /* CardView.swift in Sources */,
 				1BBD6E6427FE146100489427 /* RecipeCategoryListView.swift in Sources */,
 			);

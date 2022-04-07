@@ -11,7 +11,7 @@ import WatchKit
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            RecipeCategoryListView()
+//            RecipeCategoryListView()
         }
         .navigationBarTitleDisplayMode(.inline)
 

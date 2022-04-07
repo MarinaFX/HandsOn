@@ -112,6 +112,11 @@ enum DesignTokens {
         
         static var bold16: Font = {
             return Font(CTFontCreateUIFontForLanguage(.system, 16, nil)!).weight(.bold)
+            
+        }()
+        
+        static var circleFill: Font = {
+            return Font(CTFontCreateUIFontForLanguage(.system, 7.5, nil)!).weight(.semibold)
         }()
     }
     
