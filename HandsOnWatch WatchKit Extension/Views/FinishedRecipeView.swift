@@ -14,7 +14,7 @@ struct FinishedRecipeView: View {
                 .resizable()
                 .frame(width: 100, height: 100)
             Text("Receita Concluída!")
-                .font(DesignTokens.Fonts.description)
+                .font(DesignTokens.Fonts.light16)
             Text("HANDS ON")
                 .foregroundColor(DesignTokens.Colors.Brand.primaryColor)
         }

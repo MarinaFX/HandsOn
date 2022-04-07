@@ -16,7 +16,7 @@ struct IngredientActionView: View {
     var body: some View {
         ScrollView{
             VStack (spacing: 8){
-                Text(quantityWithUnitOfMeasurement ?? "").font(DesignTokens.Fonts.measures)
+                Text(quantityWithUnitOfMeasurement ?? "").font(DesignTokens.Fonts.semibold40)
                 Text(name ?? "").font(Font.system(size: 15)).fontWeight(.semibold).foregroundColor(DesignTokens.Colors.Brand.primaryColor)
                 Text(descriptionOfUnit ?? "").font(Font.system(size: 15)).fontWeight(.semibold).foregroundColor(DesignTokens.Colors.Neutral.highPure)
                     .multilineTextAlignment(.center)
