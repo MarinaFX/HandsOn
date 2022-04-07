@@ -7,10 +7,18 @@
 
 import Foundation
 
-struct Recipe {
+struct Recipe: Hashable {
     let title: String
     let produceQuantity: Double
     let produceUnitOfMeasurement: String
     var ingredients: [Ingredient]
     var instructions: [Instruction]
+    
+    static func == (lhs: Recipe, rhs: Recipe) -> Bool {
+        return lhs.title == rhs.title
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(title)
+    }
 }

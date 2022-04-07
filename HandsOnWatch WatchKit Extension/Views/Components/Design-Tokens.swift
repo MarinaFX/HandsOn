@@ -74,7 +74,7 @@ enum DesignTokens {
     enum ComponentDimensions {
         enum Card {
             static var cardHeight: CGFloat = {
-                return WKInterfaceDevice.current().screenBounds.size.height * 0.36
+                return WKInterfaceDevice.current().screenBounds.size.height * 0.45
             }()
         }
     }
