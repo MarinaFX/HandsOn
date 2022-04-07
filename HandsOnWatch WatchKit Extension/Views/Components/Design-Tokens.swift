@@ -99,7 +99,7 @@ enum DesignTokens {
         }()
         
         static var totalTime: Font = {
-            return Font(Font.system(size: 14).weight(.regular) as! CTFont).uppercaseSmallCaps()
+            return Font(CTFontCreateUIFontForLanguage(.system, 14, nil)!).weight(.regular).uppercaseSmallCaps()
         }()
     }
     
