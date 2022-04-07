@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CardView: View {
     var titleLabel: String
-    var recipeAmountLabel: String
+    var countLabel: String
     
     var body: some View {
         ZStack {
@@ -26,7 +26,7 @@ struct CardView: View {
                 Spacer()
                 
                 HStack {
-                    Text("\(recipeAmountLabel) Receitas")
+                    Text("\(countLabel) Receitas")
                         .font(Font.system(size: 12).weight(.light))
                     
                     Spacer()
@@ -46,6 +46,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(titleLabel: "Massa do TikTok", recipeAmountLabel: "20 Receitas")
+        CardView(titleLabel: "Massa do TikTok", countLabel: "20 Receitas")
     }
 }

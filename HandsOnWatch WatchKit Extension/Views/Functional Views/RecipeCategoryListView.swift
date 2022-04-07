@@ -8,12 +8,12 @@
 import Foundation
 import SwiftUI
 
-struct RecipeCategoryList: View {
+struct RecipeCategoryListView: View {
     @State var recipes: [Recipe] = []
     
     var body: some View {
         List(recipes, id: \.self) { recipe in
-            CardView(titleLabel: recipe.title, recipeAmountLabel: String(recipes.count))
+            CardView(titleLabel: recipe.title, countLabel: String(recipes.count))
             
             .listRowBackground(Color.clear)
         }
@@ -34,8 +34,8 @@ struct RecipeCategoryList: View {
     }
 }
 
-struct RecipeCategoryList_Previews: PreviewProvider {
+struct RecipeCategoryListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeCategoryList()
+        RecipeCategoryListView()
     }
 }
