@@ -15,11 +15,9 @@ struct IngredientActionView: View {
     
     var body: some View {
         ScrollView{
-            VStack{
-                Text(quantityWithUnitOfMeasurement ?? "").font(Font.system(size: 40)).fontWeight(.semibold)
-                    .padding(.bottom, 4)
+            VStack (spacing: 8){
+                Text(quantityWithUnitOfMeasurement ?? "").font(DesignTokens.Fonts.measures)
                 Text(name ?? "").font(Font.system(size: 15)).fontWeight(.semibold).foregroundColor(DesignTokens.Colors.Brand.primaryColor)
-                    .padding(.bottom, 4)
                 Text(descriptionOfUnit ?? "").font(Font.system(size: 15)).fontWeight(.semibold).foregroundColor(DesignTokens.Colors.Neutral.highPure)
                     .multilineTextAlignment(.center)
                     .frame(width: WKInterfaceDevice.current().screenBounds.size.width * 0.9, alignment: .center)

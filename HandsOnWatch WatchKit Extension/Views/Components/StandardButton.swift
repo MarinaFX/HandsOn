@@ -17,9 +17,9 @@ struct StandardButton: View {
             Button(textButton ?? "") {
                 // Do something here
             }.foregroundColor(DesignTokens.Colors.Neutral.highPure)
-            .background(DesignTokens.Colors.Brand.primaryColor)
-            .cornerRadius(500)
-            .font(Font.system(size: 16).bold())
+                .background(DesignTokens.Colors.Brand.primaryColor)
+                .cornerRadius(DesignTokens.BorderRadius.circular)
+                .font(DesignTokens.Fonts.bold16)
             
         } else {
             
@@ -27,8 +27,8 @@ struct StandardButton: View {
                 // Do something here
             }.foregroundColor(DesignTokens.Colors.Neutral.highPure)
                 .background(DesignTokens.Colors.Neutral.lowDark)
-            .cornerRadius(500)
-            .font(Font.system(size: 16).bold())
+                .cornerRadius(DesignTokens.BorderRadius.circular)
+                .font(DesignTokens.Fonts.bold16)
             
         }
     }
@@ -37,6 +37,6 @@ struct StandardButton: View {
 struct StandardButton_Previews: PreviewProvider {
     static var previews: some View {
         StandardButton(type: "primary", textButton: "Anterior")
-
+        
     }
 }
