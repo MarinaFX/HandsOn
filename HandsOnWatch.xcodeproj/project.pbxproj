@@ -24,6 +24,8 @@
 		4854B28727FE0F59005F9659 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28627FE0F59005F9659 /* Instruction.swift */; };
 		4854B28927FE1065005F9659 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28827FE1065005F9659 /* Recipe.swift */; };
 		4854B28B27FE20CF005F9659 /* FinishedTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28A27FE20CF005F9659 /* FinishedTimerView.swift */; };
+		DF61E9DB27FF53400007E01B /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61E9DA27FF53400007E01B /* StandardButton.swift */; };
+		DF61E9DD27FF53560007E01B /* IngredientActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61E9DC27FF53560007E01B /* IngredientActionView.swift */; };
 		4854B28D27FF5361005F9659 /* FinishedRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854B28C27FF5361005F9659 /* FinishedRecipeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,8 @@
 		4854B28627FE0F59005F9659 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
 		4854B28827FE1065005F9659 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		4854B28A27FE20CF005F9659 /* FinishedTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedTimerView.swift; sourceTree = "<group>"; };
+		DF61E9DA27FF53400007E01B /* StandardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
+		DF61E9DC27FF53560007E01B /* IngredientActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientActionView.swift; sourceTree = "<group>"; };
 		4854B28C27FF5361005F9659 /* FinishedRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedRecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +164,7 @@
 		1BBD6E5A27FCBF8B00489427 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DF61E9DE27FF53710007E01B /* StepsView */,
 				1BBD6E6227FE144A00489427 /* Functional Views */,
 				1BBD6E5B27FCBF9200489427 /* Components */,
 				4854B28A27FE20CF005F9659 /* FinishedTimerView.swift */,
@@ -171,6 +176,7 @@
 		1BBD6E5B27FCBF9200489427 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DF61E9DA27FF53400007E01B /* StandardButton.swift */,
 				1BBD6E5C27FCBFA300489427 /* Design-Tokens.swift */,
 				1BBD6E6527FE166300489427 /* CardView.swift */,
 			);
@@ -193,6 +199,14 @@
 				4854B28827FE1065005F9659 /* Recipe.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DF61E9DE27FF53710007E01B /* StepsView */ = {
+			isa = PBXGroup;
+			children = (
+				DF61E9DC27FF53560007E01B /* IngredientActionView.swift */,
+			);
+			path = StepsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,12 +339,14 @@
 				1BBD6E4127FB84D900489427 /* NotificationController.swift in Sources */,
 				1BBD6E3F27FB84D900489427 /* ContentView.swift in Sources */,
 				4854B28527FE0ED0005F9659 /* Ingredient.swift in Sources */,
+				DF61E9DD27FF53560007E01B /* IngredientActionView.swift in Sources */,
 				1BBD6E4527FB84D900489427 /* ComplicationController.swift in Sources */,
 				4854B28B27FE20CF005F9659 /* FinishedTimerView.swift in Sources */,
 				1BBD6E5D27FCBFA300489427 /* Design-Tokens.swift in Sources */,
 				4854B28D27FF5361005F9659 /* FinishedRecipeView.swift in Sources */,
 				1BBD6E3D27FB84D900489427 /* HandsOnWatchApp.swift in Sources */,
 				4854B28927FE1065005F9659 /* Recipe.swift in Sources */,
+				DF61E9DB27FF53400007E01B /* StandardButton.swift in Sources */,
 				4854B28727FE0F59005F9659 /* Instruction.swift in Sources */,
 				1BBD6E4327FB84D900489427 /* NotificationView.swift in Sources */,
 				1BBD6E6627FE166300489427 /* CardView.swift in Sources */,
@@ -494,7 +510,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -526,7 +542,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -551,7 +567,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -576,7 +592,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -585,9 +601,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GYMDP69744;
+				DEVELOPMENT_TEAM = 6525BU9D84;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pazzi.marina.HandsOnWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pazzi.marina.HandsOnWatch.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -598,9 +614,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GYMDP69744;
+				DEVELOPMENT_TEAM = 6525BU9D84;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pazzi.marina.HandsOnWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pazzi.marina.HandsOnWatch.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
