@@ -8,11 +8,11 @@
 import Foundation
 
 enum Category: CustomStringConvertible {
-    case massas, bolo
+    case massas, bolos
     
     var description: String {
         switch self {
-            case .bolo:
+            case .bolos:
                 return "Bolos"
             case .massas:
                 return "Massas"
@@ -91,7 +91,7 @@ public class Recipes {
                                   Instruction(ingredients: [Ingredient(name: "Manteiga", quantityWithUnitOfMeasurement: "10g")],instruction: "Unte a fora", timer: 0),
                                   Instruction(ingredients: [Ingredient(name: "Massa", quantityWithUnitOfMeasurement: "")],instruction: "Coloque na forma", timer: 0),
                                   Instruction(ingredients: [Ingredient(name: "Forno", quantityWithUnitOfMeasurement: "")],instruction: "Asse por", timer: 1800),],
-                   category: .bolo, time: "45 minutos"))
+                   category: .bolos, time: "45 minutos"))
         
         recipe.append(
             Recipe(title: "Massa ao Molho Pesto",
