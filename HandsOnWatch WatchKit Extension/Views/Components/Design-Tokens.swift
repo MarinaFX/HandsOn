@@ -81,25 +81,33 @@ enum DesignTokens {
     
     //MARK: - Fonts
     
+    /**
+        Used for description-text token
+     
+        primary-description-text uses **support** colors
+     
+        secondary-description-text uses **neutral** colors
+     */
     enum Fonts {
-
-        static var measures: Font = {
-            return Font(CTFontCreateUIFontForLanguage(.system, 40, nil)!).weight(.semibold)
-        }()
         
-        /**
-            Used for description-text token
-         
-            primary-description-text uses **support** colors
-         
-            secondary-description-text uses **neutral** colors
-         */
-        static var description: Font = {
+        static var light16: Font = {
             return Font(CTFontCreateUIFontForLanguage(.system, 16, nil)!).weight(.light)
         }()
         
-        static var totalTime: Font = {
+        static var regular14: Font = {
             return Font(CTFontCreateUIFontForLanguage(.system, 14, nil)!).weight(.regular)
+        }()
+        
+        static var medium12: Font = {
+            return Font(CTFontCreateUIFontForLanguage(.system, 12, nil)!).weight(.medium)
+        }()
+        
+        static var medium14: Font = {
+            return Font(CTFontCreateUIFontForLanguage(.system, 14, nil)!).weight(.medium)
+        }()
+        
+        static var semibold40: Font = {
+            return Font(CTFontCreateUIFontForLanguage(.system, 40, nil)!).weight(.semibold)
         }()
         
         static var bold16: Font = {

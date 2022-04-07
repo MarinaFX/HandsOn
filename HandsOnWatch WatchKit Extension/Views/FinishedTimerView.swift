@@ -14,7 +14,7 @@ struct FinishedTimerView: View {
                 .resizable()
                 .frame(width: 111.93, height: 111.93)
             Text("Acabou o tempo!")
-                .font(DesignTokens.Fonts.totalTime)
+                .font(DesignTokens.Fonts.regular14)
             Text("HANDS ON")
                 .foregroundColor(DesignTokens.Colors.Brand.primaryColor)
         }
