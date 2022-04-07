@@ -8,10 +8,30 @@
 import SwiftUI
 
 struct RecipesListView: View {
-    var recipes: [Recipe] = [Recipe(title: "Alho Poró", produceQuantity: 20.0, produceUnitOfMeasurement: "Flemis", ingredients: [Ingredient(name: "Flemis", quantityWithUnitOfMeasurement: "Flemis")], instructions: [Instruction(ingredients: [Ingredient(name: "Flemis", quantityWithUnitOfMeasurement: "Flemis")], instruction: "Flemis", timer: 300)]),
-     Recipe(title: "Moranga", produceQuantity: 20.0, produceUnitOfMeasurement: "Flemis", ingredients: [Ingredient(name: "Flemis", quantityWithUnitOfMeasurement: "Flemis")], instructions: [Instruction(ingredients: [Ingredient(name: "Flemis", quantityWithUnitOfMeasurement: "Flemis")], instruction: "Flemis", timer: 300)]),
-     Recipe(title: "Cogumelo", produceQuantity: 20.0, produceUnitOfMeasurement: "Flemis", ingredients: [Ingredient(name: "Flemis", quantityWithUnitOfMeasurement: "Flemis")], instructions: [Instruction(ingredients: [Ingredient(name: "Flemis", quantityWithUnitOfMeasurement: "Flemis")], instruction: "Flemis", timer: 300)]),
-     Recipe(title: "Gorgonzola", produceQuantity: 20.0, produceUnitOfMeasurement: "Flemis", ingredients: [Ingredient(name: "Flemis", quantityWithUnitOfMeasurement: "Flemis")], instructions: [Instruction(ingredients: [Ingredient(name: "Flemis", quantityWithUnitOfMeasurement: "Flemis")], instruction: "Flemis", timer: 300)])]
+    var recipes: [Recipe] = [Recipe(title: "Bolo de chocolate",
+                                    produceQuantity: 2.0,
+                                    produceUnitOfMeasurement: "pratos",
+                                    ingredients: [Ingredient(name: "Ovos",quantityWithUnitOfMeasurement: "4 unidades"),
+                                                  Ingredient(name: "Açucar",quantityWithUnitOfMeasurement: "240"),
+                                                  Ingredient(name: "Chocolate em pó",quantityWithUnitOfMeasurement: "240g"),
+                                                  Ingredient(name: "Óleo",quantityWithUnitOfMeasurement: "240ml"),
+                                                  Ingredient(name: "Água",quantityWithUnitOfMeasurement: "240ml"),
+                                                  Ingredient(name: "Farinha de trigo",quantityWithUnitOfMeasurement: "480g"),
+                                                  Ingredient(name: "Fermento",quantityWithUnitOfMeasurement: "10g"),
+                                                  Ingredient(name: "Manteiga",quantityWithUnitOfMeasurement: "10g")],
+                                    instructions: [Instruction(ingredients: [Ingredient(name: "Forno", quantityWithUnitOfMeasurement: "180°")],instruction: "Pré-aqueça", timer: 0),
+                                                   Instruction(ingredients: [Ingredient(name: "Açucar", quantityWithUnitOfMeasurement: "240g")], instruction: "Adicione", timer: 0),
+                                                   Instruction(ingredients: [Ingredient(name: "Chocolate em pó", quantityWithUnitOfMeasurement: "240g")],instruction: "Adicione", timer: 0),
+                                                   Instruction(ingredients: [Ingredient(name: "Ovos", quantityWithUnitOfMeasurement: "4 unidades")],instruction: "Adicione e misture", timer: 0),
+                                                   Instruction(ingredients: [Ingredient(name: "Óleo", quantityWithUnitOfMeasurement: "4 240ml")],instruction: "Adicione e misture", timer: 0),
+                                                   Instruction(ingredients: [Ingredient(name: "Água", quantityWithUnitOfMeasurement: "4 unidades")],instruction: "Adicione e misture", timer: 0),
+                                                   Instruction(ingredients: [Ingredient(name: "Água", quantityWithUnitOfMeasurement: "4 240g"),
+                                                                             Ingredient(name: "Farinha", quantityWithUnitOfMeasurement: "240g")
+                                                                            ],instruction: "Adicione aos poucos e misture", timer: 0),
+                                                   Instruction(ingredients: [Ingredient(name: "Manteiga", quantityWithUnitOfMeasurement: "10g")],instruction: "Unte a fora", timer: 0),
+                                                   Instruction(ingredients: [Ingredient(name: "Massa", quantityWithUnitOfMeasurement: "")],instruction: "Coloque na forma", timer: 0),
+                                                   Instruction(ingredients: [Ingredient(name: "Forno", quantityWithUnitOfMeasurement: "")],instruction: "Asse por", timer: 1800),],
+                                    category: .bolos, time: "45 minutos")]
     
     var body: some View {
         VStack {
