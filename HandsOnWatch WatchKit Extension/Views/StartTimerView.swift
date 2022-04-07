@@ -12,7 +12,7 @@ struct StartTimerView: View {
         VStack(spacing: 8) {
             Spacer()
             Text("20 min")
-                .font(DesignTokens.Fonts.measures)
+                .font(DesignTokens.Fonts.semibold40)
             Text("LEVE AO FORNO")
                 .foregroundColor(DesignTokens.Colors.Brand.primaryColor)
             Spacer()
