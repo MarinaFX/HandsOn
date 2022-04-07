@@ -74,7 +74,7 @@ enum DesignTokens {
     enum ComponentDimensions {
         enum Card {
             static var cardHeight: CGFloat = {
-                return WKInterfaceDevice.current().screenBounds.size.height * 0.36
+                return WKInterfaceDevice.current().screenBounds.size.height * 0.45
             }()
         }
     }
@@ -95,11 +95,11 @@ enum DesignTokens {
             secondary-description-text uses **neutral** colors
          */
         static var description: Font = {
-            return Font(Font.system(size: 15).weight(.regular) as! CTFont).uppercaseSmallCaps()
+            return Font(CTFontCreateUIFontForLanguage(.system, 16, nil)!).weight(.light)
         }()
         
         static var totalTime: Font = {
-            return Font(CTFontCreateUIFontForLanguage(.system, 14, nil)!).weight(.regular).uppercaseSmallCaps()
+            return Font(CTFontCreateUIFontForLanguage(.system, 14, nil)!).weight(.regular)
         }()
         
         static var bold16: Font = {
