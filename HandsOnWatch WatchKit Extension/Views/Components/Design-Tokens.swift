@@ -84,7 +84,7 @@ enum DesignTokens {
     enum Fonts {
         
         static var measures: Font = {
-            return Font(Font.system(size: 40).weight(.semibold) as! CTFont)
+            return Font(CTFontCreateUIFontForLanguage(.system, 40, nil)!).weight(.semibold).uppercaseSmallCaps()
         }()
         
         /**
@@ -95,11 +95,11 @@ enum DesignTokens {
             secondary-description-text uses **neutral** colors
          */
         static var description: Font = {
-            return Font(Font.system(size: 15).weight(.regular) as! CTFont).uppercaseSmallCaps()
+            return Font(CTFontCreateUIFontForLanguage(.system, 16, nil)!).weight(.light)
         }()
         
         static var totalTime: Font = {
-            return Font(CTFontCreateUIFontForLanguage(.system, 14, nil)!).weight(.regular).uppercaseSmallCaps()
+            return Font(CTFontCreateUIFontForLanguage(.system, 14, nil)!).weight(.regular)
         }()
     }
     
